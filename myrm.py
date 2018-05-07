@@ -33,8 +33,8 @@ def main():
             #os.exit(-1)
             return
         filename = str(time.time()).split('.')[0] + arg_file
-        print('newfile:{}'.format(os.path.join(PATH_TRASH, filename)))
-        #shutil.move(arg_file, os.path.join(PATH_TRASH, filename))
+        #print('newfile:{}'.format(os.path.join(PATH_TRASH, filename)))
+        shutil.move(arg_file, os.path.join(PATH_TRASH, filename))
     
 
 if __name__ == '__main__':
